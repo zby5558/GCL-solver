@@ -1,0 +1,45 @@
+Switch: switchA
+Port: 2
+Link: switchA-switchB
+Delay: 0
+Speed: 1000
+
+
+Switch: switchB
+Port: 1
+Link: switchB-switchC
+Delay: 0
+Speed: 1000
+
+Switch: switchC
+Port: 1
+Link: switchC-dest1
+Delay: 0
+Speed: 1000
+
+Switch: switchB
+Port: 2
+Link: switchB-switchD
+Delay: 0
+Speed: 1000
+
+Switch: switchD
+Port: 1
+Link: switchD-dest2
+Delay: 0
+Speed: 1000
+
+
+Switch: Null
+Port: 0
+Link: source1-switchA
+Delay: 0
+Speed: 1000
+
+Switch: Null
+Port: 0
+Link: source2-switchA
+Delay: 0
+Speed: 1000
+
+%unit of delay is ms, unit of speed is Mbps

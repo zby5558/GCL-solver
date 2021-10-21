@@ -1,0 +1,23 @@
+Hyperperiod: 300
+
+FlowID: 1
+Period: 150
+Size: 1250
+Path: source1-switchA-switchB-switchC-dest1
+Delay-requirement: 50
+Jitter-requirement: 50
+Host: source1
+Dest: 00-00-00-00-00-03
+Queue: 7
+
+FlowID: 2
+Period: 300
+Size: 1250
+Path: source2-switchA-switchB-switchD-dest2
+Delay-requirement: 50
+Jitter-requirement: 50
+Host: source2
+Dest: 00-00-00-00-00-04
+Queue: 7
+
+%unit of size is B, unit of Delay and jitter is ms

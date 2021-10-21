@@ -1,0 +1,158 @@
+<?xml version="1.0" ?>
+<schedules>
+     <defaultcycle>300000.0us</defaultcycle>
+     <host name="source1">
+          <cycle>150000.0us</cycle>
+          <entry>
+               <start>10.0us</start>
+               <queue>7</queue>
+               <dest>00-00-00-00-00-03</dest>
+               <size>1250.0B</size>
+               <flowId>1</flowId>
+          </entry>
+     </host>
+     <host name="source2">
+          <cycle>300000.0us</cycle>
+          <entry>
+               <start>0.0us</start>
+               <queue>7</queue>
+               <dest>00-00-00-00-00-04</dest>
+               <size>1250.0B</size>
+               <flowId>2</flowId>
+          </entry>
+     </host>
+     <switch name="switchA">
+          <port id="2">
+               <schedule cycleTime="300000.0us">
+                    <entry>
+                         <length>10.0us</length>
+                         <bitvector>00000000</bitvector>
+                    </entry>
+                    <entry>
+                         <length>20.0us</length>
+                         <bitvector>11111111</bitvector>
+                    </entry>
+                    <entry>
+                         <length>149990.0us</length>
+                         <bitvector>00000000</bitvector>
+                    </entry>
+                    <entry>
+                         <length>10.0us</length>
+                         <bitvector>11111111</bitvector>
+                    </entry>
+                    <entry>
+                         <length>149970.0us</length>
+                         <bitvector>00000000</bitvector>
+                    </entry>
+               </schedule>
+          </port>
+     </switch>
+     <switch name="switchB">
+          <port id="1">
+               <schedule cycleTime="300000.0us">
+                    <entry>
+                         <length>30.0us</length>
+                         <bitvector>00000000</bitvector>
+                    </entry>
+                    <entry>
+                         <length>10.0us</length>
+                         <bitvector>11111111</bitvector>
+                    </entry>
+                    <entry>
+                         <length>149990.0us</length>
+                         <bitvector>00000000</bitvector>
+                    </entry>
+                    <entry>
+                         <length>10.0us</length>
+                         <bitvector>11111111</bitvector>
+                    </entry>
+                    <entry>
+                         <length>149960.0us</length>
+                         <bitvector>00000000</bitvector>
+                    </entry>
+               </schedule>
+          </port>
+     </switch>
+     <switch name="switchC">
+          <port id="1">
+               <schedule cycleTime="300000.0us">
+                    <entry>
+                         <length>40.0us</length>
+                         <bitvector>00000000</bitvector>
+                    </entry>
+                    <entry>
+                         <length>10.0us</length>
+                         <bitvector>11111111</bitvector>
+                    </entry>
+                    <entry>
+                         <length>149990.0us</length>
+                         <bitvector>00000000</bitvector>
+                    </entry>
+                    <entry>
+                         <length>10.0us</length>
+                         <bitvector>11111111</bitvector>
+                    </entry>
+                    <entry>
+                         <length>149950.0us</length>
+                         <bitvector>00000000</bitvector>
+                    </entry>
+               </schedule>
+          </port>
+     </switch>
+     <switch name="switchB">
+          <port id="2">
+               <schedule cycleTime="300000.0us">
+                    <entry>
+                         <length>20.0us</length>
+                         <bitvector>00000000</bitvector>
+                    </entry>
+                    <entry>
+                         <length>10.0us</length>
+                         <bitvector>11111111</bitvector>
+                    </entry>
+                    <entry>
+                         <length>299970.0us</length>
+                         <bitvector>00000000</bitvector>
+                    </entry>
+               </schedule>
+          </port>
+     </switch>
+     <switch name="switchD">
+          <port id="1">
+               <schedule cycleTime="300000.0us">
+                    <entry>
+                         <length>30.0us</length>
+                         <bitvector>00000000</bitvector>
+                    </entry>
+                    <entry>
+                         <length>10.0us</length>
+                         <bitvector>11111111</bitvector>
+                    </entry>
+                    <entry>
+                         <length>299960.0us</length>
+                         <bitvector>00000000</bitvector>
+                    </entry>
+               </schedule>
+          </port>
+     </switch>
+     <switch name="Null">
+          <port id="0">
+               <schedule cycleTime="300000.0us">
+                    <entry>
+                         <length>300000.0us</length>
+                         <bitvector>00000000</bitvector>
+                    </entry>
+               </schedule>
+          </port>
+     </switch>
+     <switch name="Null">
+          <port id="0">
+               <schedule cycleTime="300000.0us">
+                    <entry>
+                         <length>300000.0us</length>
+                         <bitvector>00000000</bitvector>
+                    </entry>
+               </schedule>
+          </port>
+     </switch>
+</schedules>
